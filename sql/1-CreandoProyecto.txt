@@ -1,0 +1,66 @@
+Proyecto zero C# - Sql Server 
+
+app win form
+Crear tres carpetas para ordenar archivos
+parte datos,logica,presentacion
+
+1) en presentacion crear new forma 'MenuPrincipal'
+2) editar arranque de programa, editar codigo Program.cs 
+Applicaction.Run(new Form1()); --->> Applicaction.Run(new Presentacion.MenuPrincipal())
+
+3) Agregamos paneles -->> Ajustar desde dock
+4) insertar boton, ajustar dock, cambiar nombre para manipulacion y propiedad flatStyle
+5) Cambiar backColor fondo, ForeColor color de texto, 
+6) En font en check mas, modificar tamaño de letra(size 18) y borde(negrita true)
+7)Descargar icono en png de flaticon 
+8) Eliminar recuerso desde ventana de project, borrar linea desde project.cs
+*************************************************
+
+Autosize false, permite moficar tamaño de la pestaña
+***************************************************
+
+Para maximizar formulario al momento del inicio size/window state/ Maximized
+
+Agregar formulario, add, new form esto en carpeta presentacion
+luego visualizar el mismo, confgurar boton con clase predefinida:
+PruebaForm frm = new PruebaForm();
+            frm.ShowDialog();
+
+-->> Esto va dandole click al buttom ya cargado
+
+*****************************************************
+
+Control de usuario:
+Add en presentacion, control de usuario -->> Diferente de formulario
+
+
+private void btnPersonal_Click(object sender, EventArgs e)
+        {
+            PruebasControl Control = new PruebasControl(); -->> Declarar obejeto y establecer conexion
+            panel0.Controls.Clear(); -->> Limpiar luegar donde se mustra
+            Control.Dock = DockStyle.Fill; --->> Permitir expansion 
+            panel0.Controls.Add(Control); --->> Mostrar en panel cero;
+        }
+
+*****************************************************
+
+DataGridView -- Muestra datos va enlazado a datos
+
+Paginado, segun la consulta ir mostrando diferentes valores
+
+Configuracion de data GridView -
+AllowUserToAddRows - False (No permitir agregar fila) 
+AloowUserToDeleteRow - False (Permitir que usuario borre filas)
+AllowUserToOtrderColum - False
+AllowUserToResizeColum - True (Agrangar columnas)
+
+Importante en seleccionMode - full row select
+Seleccionar celda entera - Importante para capturar datos
+
+RowTemplate - DefaultCellStyle 	
+Como se visualizan las celdas si son oscuras o no al momento de la seleccion
+
+Crear buscardor superior con un text box
+Eliminar border condicion flatStyle - Flat
+
+*****************************
