@@ -3,6 +3,16 @@ Armado de app windows
 Crear la carpeta para las capas:
 Logica datos presentacion
 
+Editar program.cs para que corra desde MenuPrincipal
+static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Presentacion.MenuPrincipal());
+        }
+
+Control interno de paneles
+IsMdiContainer true
 
 
 paneles
