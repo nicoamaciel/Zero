@@ -1,4 +1,10 @@
 Armado de app windows
+
+Crear la carpeta para las capas:
+Logica datos presentacion
+
+
+
 paneles
 MenuStrip
 Botonera
