@@ -1,0 +1,4 @@
+Armado de app windows
+paneles
+MenuStrip
+Botonera
