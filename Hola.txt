@@ -21,4 +21,9 @@ Botoneraaaaaa
 
 Agregar otra ventan y llamarla
 controlador de usuario
-dataGridView1
+dataGridView1 -->> Para mostrar datos
+FlowLayoutPanel -->> Para Ordenar botones
+Coneccion con boton personal de ventana control de usuario:
+
+
+Panel inferior para paginado -->> 

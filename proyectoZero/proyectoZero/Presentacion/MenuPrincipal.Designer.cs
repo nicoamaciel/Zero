@@ -34,17 +34,17 @@ namespace proyectoZero.Presentacion
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnRegistro = new System.Windows.Forms.Button();
             this.btnPrePlanilla = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Bienvenido = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,122 +87,6 @@ namespace proyectoZero.Presentacion
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::proyectoZero.Properties.Resources.estaciones;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(13, 423);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(118, 34);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Estaciones";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::proyectoZero.Properties.Resources.dato1;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(13, 365);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 34);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Restaurar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::proyectoZero.Properties.Resources.coworking1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 34);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Usuario";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnRegistro
-            // 
-            this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRegistro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistro.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
-            this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRegistro.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnRegistro.FlatAppearance.BorderSize = 0;
-            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistro.Image = global::proyectoZero.Properties.Resources.hora;
-            this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistro.Location = new System.Drawing.Point(12, 250);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(118, 34);
-            this.btnRegistro.TabIndex = 4;
-            this.btnRegistro.Text = "Registro";
-            this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistro.UseVisualStyleBackColor = false;
-            // 
-            // btnPrePlanilla
-            // 
-            this.btnPrePlanilla.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPrePlanilla.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
-            this.btnPrePlanilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrePlanilla.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnPrePlanilla.FlatAppearance.BorderSize = 0;
-            this.btnPrePlanilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrePlanilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrePlanilla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPrePlanilla.Location = new System.Drawing.Point(13, 83);
-            this.btnPrePlanilla.Name = "btnPrePlanilla";
-            this.btnPrePlanilla.Size = new System.Drawing.Size(118, 34);
-            this.btnPrePlanilla.TabIndex = 3;
-            this.btnPrePlanilla.Text = "PrePlanilla";
-            this.btnPrePlanilla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPrePlanilla.UseVisualStyleBackColor = false;
-            // 
-            // btnPersonal
-            // 
-            this.btnPersonal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonal.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
-            this.btnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPersonal.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPersonal.FlatAppearance.BorderSize = 0;
-            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPersonal.Location = new System.Drawing.Point(13, 34);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(118, 34);
-            this.btnPersonal.TabIndex = 2;
-            this.btnPersonal.Text = "Personal";
-            this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonal.UseVisualStyleBackColor = false;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -226,25 +110,144 @@ namespace proyectoZero.Presentacion
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Image = global::proyectoZero.Properties.Resources.estaciones;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(12, 382);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(118, 34);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Estaciones";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::proyectoZero.Properties.Resources.dato1;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(12, 332);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(118, 34);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Restaurar";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::proyectoZero.Properties.Resources.coworking1;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(12, 227);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(118, 34);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Usuario";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistro
+            // 
+            this.btnRegistro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRegistro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistro.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
+            this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistro.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRegistro.FlatAppearance.BorderSize = 0;
+            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistro.Image = global::proyectoZero.Properties.Resources.hora;
+            this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistro.Location = new System.Drawing.Point(12, 278);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(118, 34);
+            this.btnRegistro.TabIndex = 4;
+            this.btnRegistro.Text = "Registro";
+            this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistro.UseVisualStyleBackColor = false;
+            // 
+            // btnPrePlanilla
+            // 
+            this.btnPrePlanilla.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPrePlanilla.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
+            this.btnPrePlanilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrePlanilla.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPrePlanilla.FlatAppearance.BorderSize = 0;
+            this.btnPrePlanilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrePlanilla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrePlanilla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrePlanilla.Location = new System.Drawing.Point(12, 57);
+            this.btnPrePlanilla.Name = "btnPrePlanilla";
+            this.btnPrePlanilla.Size = new System.Drawing.Size(118, 34);
+            this.btnPrePlanilla.TabIndex = 3;
+            this.btnPrePlanilla.Text = "PrePlanilla";
+            this.btnPrePlanilla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPrePlanilla.UseVisualStyleBackColor = false;
+            // 
+            // btnPersonal
+            // 
+            this.btnPersonal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonal.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
+            this.btnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPersonal.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPersonal.FlatAppearance.BorderSize = 0;
+            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonal.Location = new System.Drawing.Point(12, 17);
+            this.btnPersonal.Name = "btnPersonal";
+            this.btnPersonal.Size = new System.Drawing.Size(118, 34);
+            this.btnPersonal.TabIndex = 2;
+            this.btnPersonal.Text = "Personal";
+            this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
+            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.Bienvenido);
-            this.panel1.Location = new System.Drawing.Point(210, 34);
+            this.panel1.Controls.Add(this.btnRegistro);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnPersonal);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnPrePlanilla);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(525, 98);
+            this.panel1.Size = new System.Drawing.Size(147, 441);
             this.panel1.TabIndex = 9;
             // 
-            // Bienvenido
+            // panel2
             // 
-            this.Bienvenido.AutoSize = true;
-            this.Bienvenido.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Bienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Bienvenido.Location = new System.Drawing.Point(97, 20);
-            this.Bienvenido.Name = "Bienvenido";
-            this.Bienvenido.Size = new System.Drawing.Size(322, 63);
-            this.Bienvenido.TabIndex = 0;
-            this.Bienvenido.Text = "Bienvenido!";
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(147, 24);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(695, 441);
+            this.panel2.TabIndex = 10;
             // 
             // MenuPrincipal
             // 
@@ -252,14 +255,9 @@ namespace proyectoZero.Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(842, 487);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnRegistro);
-            this.Controls.Add(this.btnPrePlanilla);
-            this.Controls.Add(this.btnPersonal);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuPrincipal";
@@ -270,7 +268,6 @@ namespace proyectoZero.Presentacion
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,6 +290,6 @@ namespace proyectoZero.Presentacion
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Bienvenido;
+        private System.Windows.Forms.Panel panel2;
     }
 }
