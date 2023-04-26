@@ -116,6 +116,7 @@ namespace proyectoZero.Presentacion
             this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -136,6 +137,7 @@ namespace proyectoZero.Presentacion
             this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button4.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -156,6 +158,7 @@ namespace proyectoZero.Presentacion
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button3.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -176,6 +179,7 @@ namespace proyectoZero.Presentacion
             this.btnRegistro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegistro.BackgroundImage = global::proyectoZero.Properties.Resources.verde;
             this.btnRegistro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistro.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnRegistro.FlatAppearance.BorderSize = 0;
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -195,6 +199,7 @@ namespace proyectoZero.Presentacion
             this.btnPrePlanilla.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPrePlanilla.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
             this.btnPrePlanilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrePlanilla.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrePlanilla.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnPrePlanilla.FlatAppearance.BorderSize = 0;
             this.btnPrePlanilla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -213,6 +218,7 @@ namespace proyectoZero.Presentacion
             this.btnPersonal.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPersonal.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
             this.btnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPersonal.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPersonal.FlatAppearance.BorderSize = 0;
             this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
