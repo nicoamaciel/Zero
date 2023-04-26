@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using proyectoZero.Logica;
+using proyectoZero.Datos;
 
 namespace proyectoZero.Presentacion
 {
@@ -45,5 +47,24 @@ namespace proyectoZero.Presentacion
         {
 
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            PanelCargos.Visible = false;
+            PanelPaginado.Visible = false;
+            PanelRegistros.Visible = true;
+            PanelRegistros.Dock = DockStyle.Fill;
+            btnGuardar.Visible = true;
+            btnGuardar2.Visible = false;
+            Limpiar();
+        }
+        private void Limpiar()
+        {
+            txtNombres.Clear();
+            txtIdentificacion.Clear();
+            txtCargo.Clear();
+            txtSueldoPorHora.Clear();
+        }
+
     }
 }

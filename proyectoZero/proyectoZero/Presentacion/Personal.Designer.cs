@@ -30,12 +30,13 @@ namespace proyectoZero.Presentacion
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.btnMostrarTds = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelPaginado = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,39 +50,38 @@ namespace proyectoZero.Presentacion
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtIdentificacion = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnCargo = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtSueldoPorHora = new System.Windows.Forms.TextBox();
+            this.cbxPais = new System.Windows.Forms.ComboBox();
+            this.btnAgregarCargo = new System.Windows.Forms.Button();
+            this.PanelRegistros = new System.Windows.Forms.Panel();
+            this.PanelCargos = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtSueldoxHoraG = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCargoG = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnGuardar2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnVolver = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.PanelPaginado.SuspendLayout();
+            this.PanelRegistros.SuspendLayout();
+            this.PanelCargos.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,6 +98,24 @@ namespace proyectoZero.Presentacion
             this.panel1.Size = new System.Drawing.Size(1052, 73);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button6.BackgroundImage = global::proyectoZero.Properties.Resources.lupa1;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(396, 26);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(35, 33);
+            this.button6.TabIndex = 22;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // btnMostrarTds
             // 
@@ -129,6 +147,7 @@ namespace proyectoZero.Presentacion
             this.btnAgregar.Size = new System.Drawing.Size(84, 67);
             this.btnAgregar.TabIndex = 18;
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // panel3
             // 
@@ -168,22 +187,22 @@ namespace proyectoZero.Presentacion
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // panel2
+            // PanelPaginado
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.btnSiguiente);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 458);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1052, 61);
-            this.panel2.TabIndex = 2;
+            this.PanelPaginado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.PanelPaginado.Controls.Add(this.button2);
+            this.PanelPaginado.Controls.Add(this.btnSiguiente);
+            this.PanelPaginado.Controls.Add(this.button1);
+            this.PanelPaginado.Controls.Add(this.label9);
+            this.PanelPaginado.Controls.Add(this.button3);
+            this.PanelPaginado.Controls.Add(this.label8);
+            this.PanelPaginado.Controls.Add(this.label7);
+            this.PanelPaginado.Controls.Add(this.label6);
+            this.PanelPaginado.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PanelPaginado.Location = new System.Drawing.Point(0, 458);
+            this.PanelPaginado.Name = "PanelPaginado";
+            this.PanelPaginado.Size = new System.Drawing.Size(1052, 61);
+            this.PanelPaginado.TabIndex = 2;
             // 
             // button2
             // 
@@ -343,16 +362,16 @@ namespace proyectoZero.Presentacion
             this.panel5.TabIndex = 12;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // textBox3
+            // txtIdentificacion
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Location = new System.Drawing.Point(283, 55);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 19);
-            this.textBox3.TabIndex = 11;
+            this.txtIdentificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIdentificacion.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtIdentificacion.Location = new System.Drawing.Point(283, 55);
+            this.txtIdentificacion.Multiline = true;
+            this.txtIdentificacion.Name = "txtIdentificacion";
+            this.txtIdentificacion.Size = new System.Drawing.Size(262, 19);
+            this.txtIdentificacion.TabIndex = 1;
             // 
             // panel6
             // 
@@ -363,17 +382,17 @@ namespace proyectoZero.Presentacion
             this.panel6.TabIndex = 14;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // textBox4
+            // txtCargo
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox4.Location = new System.Drawing.Point(286, 129);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 19);
-            this.textBox4.TabIndex = 13;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCargo.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtCargo.Location = new System.Drawing.Point(286, 129);
+            this.txtCargo.Multiline = true;
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(201, 19);
+            this.txtCargo.TabIndex = 3;
+            this.txtCargo.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // panel7
             // 
@@ -383,78 +402,170 @@ namespace proyectoZero.Presentacion
             this.panel7.Size = new System.Drawing.Size(225, 2);
             this.panel7.TabIndex = 16;
             // 
-            // textBox5
+            // txtSueldoPorHora
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox5.Location = new System.Drawing.Point(286, 173);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(227, 19);
-            this.textBox5.TabIndex = 15;
+            this.txtSueldoPorHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtSueldoPorHora.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSueldoPorHora.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtSueldoPorHora.Location = new System.Drawing.Point(286, 173);
+            this.txtSueldoPorHora.Multiline = true;
+            this.txtSueldoPorHora.Name = "txtSueldoPorHora";
+            this.txtSueldoPorHora.Size = new System.Drawing.Size(227, 19);
+            this.txtSueldoPorHora.TabIndex = 4;
             // 
-            // comboBox1
+            // cbxPais
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(286, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 21);
-            this.comboBox1.TabIndex = 17;
+            this.cbxPais.FormattingEnabled = true;
+            this.cbxPais.Items.AddRange(new object[] {
+            "Antigua y Barbuda",
+            "Aruba",
+            "Bahamas",
+            "Barbados",
+            "Cuba",
+            "Dominica",
+            "Grenada",
+            "Guadalupe",
+            "Haití",
+            "Islas Caimán",
+            "Islas Turcas y Caicos",
+            "Islas Vírgenes",
+            "Jamaica",
+            "Martinica",
+            "Puerto Rico",
+            "República Dominicana",
+            "San Bartolomé",
+            "San Cristóbal y Nieves",
+            "San Vicente y las Granadinas",
+            "Santa Lucía",
+            "Trinidad y Tobago",
+            "Belice",
+            "Costa Rica",
+            "El Salvador",
+            "Guatemala",
+            "Honduras",
+            "Nicaragua",
+            "Panamá",
+            "Argentina",
+            "Bolivia",
+            "Brasil",
+            "Chile",
+            "Colombia",
+            "Ecuador",
+            "Guyana",
+            "Guyana Francesa",
+            "Paraguay",
+            "Perú",
+            "Suriname",
+            "Uruguay",
+            "Venezuela",
+            "México"});
+            this.cbxPais.Location = new System.Drawing.Point(286, 89);
+            this.cbxPais.Name = "cbxPais";
+            this.cbxPais.Size = new System.Drawing.Size(196, 21);
+            this.cbxPais.TabIndex = 2;
             // 
-            // btnCargo
+            // btnAgregarCargo
             // 
-            this.btnCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.btnCargo.FlatAppearance.BorderSize = 0;
-            this.btnCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargo.ForeColor = System.Drawing.Color.White;
-            this.btnCargo.Location = new System.Drawing.Point(508, 124);
-            this.btnCargo.Name = "btnCargo";
-            this.btnCargo.Size = new System.Drawing.Size(130, 34);
-            this.btnCargo.TabIndex = 18;
-            this.btnCargo.Text = "+ Agregar cargo ";
-            this.btnCargo.UseVisualStyleBackColor = false;
+            this.btnAgregarCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.btnAgregarCargo.FlatAppearance.BorderSize = 0;
+            this.btnAgregarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCargo.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarCargo.Location = new System.Drawing.Point(508, 124);
+            this.btnAgregarCargo.Name = "btnAgregarCargo";
+            this.btnAgregarCargo.Size = new System.Drawing.Size(130, 34);
+            this.btnAgregarCargo.TabIndex = 18;
+            this.btnAgregarCargo.Text = "+ Agregar cargo ";
+            this.btnAgregarCargo.UseVisualStyleBackColor = false;
             // 
-            // panel8
+            // PanelRegistros
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.flowLayoutPanel1);
-            this.panel8.Controls.Add(this.panel4);
-            this.panel8.Controls.Add(this.btnVolver);
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.btnCargo);
-            this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.panel5);
-            this.panel8.Controls.Add(this.panel6);
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.comboBox1);
-            this.panel8.Controls.Add(this.label1);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Controls.Add(this.textBox4);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Location = new System.Drawing.Point(6, 93);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1043, 353);
-            this.panel8.TabIndex = 19;
+            this.PanelRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.PanelRegistros.Controls.Add(this.PanelCargos);
+            this.PanelRegistros.Controls.Add(this.flowLayoutPanel1);
+            this.PanelRegistros.Controls.Add(this.panel4);
+            this.PanelRegistros.Controls.Add(this.btnVolver);
+            this.PanelRegistros.Controls.Add(this.panel7);
+            this.PanelRegistros.Controls.Add(this.btnAgregarCargo);
+            this.PanelRegistros.Controls.Add(this.txtSueldoPorHora);
+            this.PanelRegistros.Controls.Add(this.txtNombres);
+            this.PanelRegistros.Controls.Add(this.label5);
+            this.PanelRegistros.Controls.Add(this.panel5);
+            this.PanelRegistros.Controls.Add(this.panel6);
+            this.PanelRegistros.Controls.Add(this.txtIdentificacion);
+            this.PanelRegistros.Controls.Add(this.cbxPais);
+            this.PanelRegistros.Controls.Add(this.label1);
+            this.PanelRegistros.Controls.Add(this.label2);
+            this.PanelRegistros.Controls.Add(this.label3);
+            this.PanelRegistros.Controls.Add(this.txtCargo);
+            this.PanelRegistros.Controls.Add(this.label4);
+            this.PanelRegistros.Location = new System.Drawing.Point(6, 93);
+            this.PanelRegistros.Name = "PanelRegistros";
+            this.PanelRegistros.Size = new System.Drawing.Size(1043, 353);
+            this.PanelRegistros.TabIndex = 19;
+            this.PanelRegistros.Visible = false;
             // 
-            // panel9
+            // PanelCargos
             // 
-            this.panel9.Controls.Add(this.flowLayoutPanel2);
-            this.panel9.Controls.Add(this.panel11);
-            this.panel9.Controls.Add(this.textBox7);
-            this.panel9.Controls.Add(this.label11);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.textBox6);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(612, 193);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(418, 151);
-            this.panel9.TabIndex = 22;
+            this.PanelCargos.Controls.Add(this.flowLayoutPanel2);
+            this.PanelCargos.Controls.Add(this.panel11);
+            this.PanelCargos.Controls.Add(this.txtSueldoxHoraG);
+            this.PanelCargos.Controls.Add(this.label11);
+            this.PanelCargos.Controls.Add(this.panel10);
+            this.PanelCargos.Controls.Add(this.txtCargoG);
+            this.PanelCargos.Controls.Add(this.label10);
+            this.PanelCargos.Location = new System.Drawing.Point(612, 193);
+            this.PanelCargos.Name = "PanelCargos";
+            this.PanelCargos.Size = new System.Drawing.Size(418, 151);
+            this.PanelCargos.TabIndex = 22;
+            this.PanelCargos.Visible = false;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.button4);
+            this.flowLayoutPanel2.Controls.Add(this.button5);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(38, 68);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(242, 61);
+            this.flowLayoutPanel2.TabIndex = 21;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button4.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button4.Location = new System.Drawing.Point(3, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(107, 42);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Guardar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button5.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button5.Location = new System.Drawing.Point(116, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(107, 42);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "Guardar+";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // panel11
             // 
@@ -464,16 +575,16 @@ namespace proyectoZero.Presentacion
             this.panel11.Size = new System.Drawing.Size(225, 2);
             this.panel11.TabIndex = 20;
             // 
-            // textBox7
+            // txtSueldoxHoraG
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox7.Location = new System.Drawing.Point(148, 40);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(227, 19);
-            this.textBox7.TabIndex = 19;
+            this.txtSueldoxHoraG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtSueldoxHoraG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSueldoxHoraG.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtSueldoxHoraG.Location = new System.Drawing.Point(148, 40);
+            this.txtSueldoxHoraG.Multiline = true;
+            this.txtSueldoxHoraG.Name = "txtSueldoxHoraG";
+            this.txtSueldoxHoraG.Size = new System.Drawing.Size(227, 19);
+            this.txtSueldoxHoraG.TabIndex = 19;
             // 
             // label11
             // 
@@ -495,16 +606,16 @@ namespace proyectoZero.Presentacion
             this.panel10.Size = new System.Drawing.Size(199, 2);
             this.panel10.TabIndex = 17;
             // 
-            // textBox6
+            // txtCargoG
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox6.Location = new System.Drawing.Point(148, 9);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(201, 19);
-            this.textBox6.TabIndex = 16;
+            this.txtCargoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtCargoG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCargoG.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtCargoG.Location = new System.Drawing.Point(148, 9);
+            this.txtCargoG.Multiline = true;
+            this.txtCargoG.Name = "txtCargoG";
+            this.txtCargoG.Size = new System.Drawing.Size(201, 19);
+            this.txtCargoG.TabIndex = 16;
             // 
             // label10
             // 
@@ -591,16 +702,16 @@ namespace proyectoZero.Presentacion
             this.btnVolver.TabIndex = 21;
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txtNombres
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox2.Location = new System.Drawing.Point(286, 18);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(345, 19);
-            this.textBox2.TabIndex = 12;
+            this.txtNombres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtNombres.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombres.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.txtNombres.Location = new System.Drawing.Point(286, 18);
+            this.txtNombres.Multiline = true;
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(345, 19);
+            this.txtNombres.TabIndex = 0;
             // 
             // label1
             // 
@@ -614,92 +725,27 @@ namespace proyectoZero.Presentacion
             this.label1.TabIndex = 11;
             this.label1.Text = "Nombre y apellido:";
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button6.BackgroundImage = global::proyectoZero.Properties.Resources.lupa1;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(396, 26);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(35, 33);
-            this.button6.TabIndex = 22;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.button4);
-            this.flowLayoutPanel2.Controls.Add(this.button5);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(38, 68);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(242, 61);
-            this.flowLayoutPanel2.TabIndex = 21;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button4.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 42);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Guardar";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button5.BackgroundImage = global::proyectoZero.Properties.Resources.naranja;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(116, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 42);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Guardar+";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
             // Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.PanelRegistros);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelPaginado);
             this.Controls.Add(this.panel1);
             this.Name = "Personal";
             this.Size = new System.Drawing.Size(1052, 519);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.PanelPaginado.ResumeLayout(false);
+            this.PanelPaginado.PerformLayout();
+            this.PanelRegistros.ResumeLayout(false);
+            this.PanelRegistros.PerformLayout();
+            this.PanelCargos.ResumeLayout(false);
+            this.PanelCargos.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -708,7 +754,7 @@ namespace proyectoZero.Presentacion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PanelPaginado;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -716,17 +762,17 @@ namespace proyectoZero.Presentacion
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtIdentificacion;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtSueldoPorHora;
+        private System.Windows.Forms.ComboBox cbxPais;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnCargo;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btnAgregarCargo;
+        private System.Windows.Forms.Panel PanelRegistros;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombres;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnGuardar;
@@ -741,12 +787,12 @@ namespace proyectoZero.Presentacion
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel PanelCargos;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtSueldoxHoraG;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCargoG;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
