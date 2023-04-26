@@ -43,8 +43,11 @@ namespace proyectoZero.Presentacion
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Bienvenido = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -56,7 +59,7 @@ namespace proyectoZero.Presentacion
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(842, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -96,7 +99,7 @@ namespace proyectoZero.Presentacion
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Image = global::proyectoZero.Properties.Resources.estaciones;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(13, 386);
+            this.button5.Location = new System.Drawing.Point(13, 423);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(118, 34);
             this.button5.TabIndex = 7;
@@ -116,7 +119,7 @@ namespace proyectoZero.Presentacion
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Image = global::proyectoZero.Properties.Resources.dato1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(13, 328);
+            this.button4.Location = new System.Drawing.Point(13, 365);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(118, 34);
             this.button4.TabIndex = 6;
@@ -136,7 +139,7 @@ namespace proyectoZero.Presentacion
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = global::proyectoZero.Properties.Resources.coworking1;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 272);
+            this.button3.Location = new System.Drawing.Point(12, 309);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 34);
             this.button3.TabIndex = 5;
@@ -156,7 +159,7 @@ namespace proyectoZero.Presentacion
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistro.Image = global::proyectoZero.Properties.Resources.hora;
             this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistro.Location = new System.Drawing.Point(12, 213);
+            this.btnRegistro.Location = new System.Drawing.Point(12, 250);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(118, 34);
             this.btnRegistro.TabIndex = 4;
@@ -205,9 +208,9 @@ namespace proyectoZero.Presentacion
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar2,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 465);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(842, 22);
             this.statusStrip1.TabIndex = 8;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -223,12 +226,33 @@ namespace proyectoZero.Presentacion
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Bienvenido);
+            this.panel1.Location = new System.Drawing.Point(210, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(525, 98);
+            this.panel1.TabIndex = 9;
+            // 
+            // Bienvenido
+            // 
+            this.Bienvenido.AutoSize = true;
+            this.Bienvenido.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Bienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenido.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Bienvenido.Location = new System.Drawing.Point(97, 20);
+            this.Bienvenido.Name = "Bienvenido";
+            this.Bienvenido.Size = new System.Drawing.Size(322, 63);
+            this.Bienvenido.TabIndex = 0;
+            this.Bienvenido.Text = "Bienvenido!";
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(842, 487);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -245,6 +269,8 @@ namespace proyectoZero.Presentacion
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +292,7 @@ namespace proyectoZero.Presentacion
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Bienvenido;
     }
 }

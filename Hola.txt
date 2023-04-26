@@ -17,4 +17,8 @@ IsMdiContainer true
 
 paneles
 MenuStrip
-Botonera
+Botoneraaaaaa
+
+Agregar otra ventan y llamarla
+controlador de usuario
+dataGridView1
