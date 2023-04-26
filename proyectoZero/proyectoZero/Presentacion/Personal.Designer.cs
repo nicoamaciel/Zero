@@ -95,7 +95,7 @@ namespace proyectoZero.Presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(828, 73);
+            this.panel1.Size = new System.Drawing.Size(1052, 73);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -106,7 +106,7 @@ namespace proyectoZero.Presentacion
             this.btnMostrarTds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarTds.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarTds.ForeColor = System.Drawing.Color.White;
-            this.btnMostrarTds.Location = new System.Drawing.Point(337, 19);
+            this.btnMostrarTds.Location = new System.Drawing.Point(426, 26);
             this.btnMostrarTds.Name = "btnMostrarTds";
             this.btnMostrarTds.Size = new System.Drawing.Size(130, 34);
             this.btnMostrarTds.TabIndex = 19;
@@ -124,7 +124,7 @@ namespace proyectoZero.Presentacion
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(694, 3);
+            this.btnAgregar.Location = new System.Drawing.Point(965, 3);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(84, 67);
             this.btnAgregar.TabIndex = 18;
@@ -133,7 +133,7 @@ namespace proyectoZero.Presentacion
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(71, 47);
+            this.panel3.Location = new System.Drawing.Point(160, 54);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 3);
             this.panel3.TabIndex = 8;
@@ -143,7 +143,7 @@ namespace proyectoZero.Presentacion
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Location = new System.Drawing.Point(74, 23);
+            this.textBox1.Location = new System.Drawing.Point(163, 30);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(227, 25);
@@ -164,7 +164,7 @@ namespace proyectoZero.Presentacion
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(828, 385);
+            this.dataGridView1.Size = new System.Drawing.Size(1052, 385);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -182,7 +182,7 @@ namespace proyectoZero.Presentacion
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 458);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(828, 61);
+            this.panel2.Size = new System.Drawing.Size(1052, 61);
             this.panel2.TabIndex = 2;
             // 
             // button2
@@ -192,7 +192,7 @@ namespace proyectoZero.Presentacion
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(689, 6);
+            this.button2.Location = new System.Drawing.Point(919, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 41);
             this.button2.TabIndex = 25;
@@ -220,7 +220,7 @@ namespace proyectoZero.Presentacion
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(553, 6);
+            this.button1.Location = new System.Drawing.Point(783, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 41);
             this.button1.TabIndex = 24;
@@ -232,7 +232,7 @@ namespace proyectoZero.Presentacion
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(470, 12);
+            this.label9.Location = new System.Drawing.Point(579, 16);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(16, 17);
             this.label9.TabIndex = 4;
@@ -257,7 +257,7 @@ namespace proyectoZero.Presentacion
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(436, 12);
+            this.label8.Location = new System.Drawing.Point(545, 16);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 17);
             this.label8.TabIndex = 3;
@@ -268,7 +268,7 @@ namespace proyectoZero.Presentacion
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(385, 14);
+            this.label7.Location = new System.Drawing.Point(494, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(16, 17);
             this.label7.TabIndex = 2;
@@ -279,7 +279,7 @@ namespace proyectoZero.Presentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(343, 12);
+            this.label6.Location = new System.Drawing.Point(452, 16);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(36, 17);
             this.label6.TabIndex = 1;
@@ -292,7 +292,7 @@ namespace proyectoZero.Presentacion
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(45, 59);
+            this.label2.Location = new System.Drawing.Point(187, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 17);
             this.label2.TabIndex = 4;
@@ -304,7 +304,7 @@ namespace proyectoZero.Presentacion
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(86, 95);
+            this.label3.Location = new System.Drawing.Point(228, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 17);
             this.label3.TabIndex = 5;
@@ -316,7 +316,7 @@ namespace proyectoZero.Presentacion
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(75, 135);
+            this.label4.Location = new System.Drawing.Point(217, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 6;
@@ -328,7 +328,7 @@ namespace proyectoZero.Presentacion
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(11, 177);
+            this.label5.Location = new System.Drawing.Point(153, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 17);
             this.label5.TabIndex = 7;
@@ -337,7 +337,7 @@ namespace proyectoZero.Presentacion
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel5.Location = new System.Drawing.Point(145, 74);
+            this.panel5.Location = new System.Drawing.Point(287, 72);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(258, 2);
             this.panel5.TabIndex = 12;
@@ -348,7 +348,7 @@ namespace proyectoZero.Presentacion
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Location = new System.Drawing.Point(141, 57);
+            this.textBox3.Location = new System.Drawing.Point(283, 55);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(262, 19);
@@ -357,7 +357,7 @@ namespace proyectoZero.Presentacion
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel6.Location = new System.Drawing.Point(149, 148);
+            this.panel6.Location = new System.Drawing.Point(291, 146);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(199, 2);
             this.panel6.TabIndex = 14;
@@ -368,7 +368,7 @@ namespace proyectoZero.Presentacion
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox4.Location = new System.Drawing.Point(144, 131);
+            this.textBox4.Location = new System.Drawing.Point(286, 129);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(201, 19);
@@ -378,7 +378,7 @@ namespace proyectoZero.Presentacion
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel7.Location = new System.Drawing.Point(144, 195);
+            this.panel7.Location = new System.Drawing.Point(286, 193);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(225, 2);
             this.panel7.TabIndex = 16;
@@ -388,7 +388,7 @@ namespace proyectoZero.Presentacion
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox5.Location = new System.Drawing.Point(144, 175);
+            this.textBox5.Location = new System.Drawing.Point(286, 173);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(227, 19);
@@ -397,7 +397,7 @@ namespace proyectoZero.Presentacion
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 91);
+            this.comboBox1.Location = new System.Drawing.Point(286, 89);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(250, 21);
             this.comboBox1.TabIndex = 17;
@@ -409,7 +409,7 @@ namespace proyectoZero.Presentacion
             this.btnCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargo.ForeColor = System.Drawing.Color.White;
-            this.btnCargo.Location = new System.Drawing.Point(366, 126);
+            this.btnCargo.Location = new System.Drawing.Point(508, 124);
             this.btnCargo.Name = "btnCargo";
             this.btnCargo.Size = new System.Drawing.Size(130, 34);
             this.btnCargo.TabIndex = 18;
@@ -439,7 +439,7 @@ namespace proyectoZero.Presentacion
             this.panel8.Controls.Add(this.label4);
             this.panel8.Location = new System.Drawing.Point(6, 93);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(822, 353);
+            this.panel8.Size = new System.Drawing.Size(1043, 353);
             this.panel8.TabIndex = 19;
             // 
             // panel9
@@ -451,7 +451,7 @@ namespace proyectoZero.Presentacion
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.textBox6);
             this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(395, 182);
+            this.panel9.Location = new System.Drawing.Point(612, 193);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(418, 151);
             this.panel9.TabIndex = 22;
@@ -522,7 +522,7 @@ namespace proyectoZero.Presentacion
             // 
             this.flowLayoutPanel1.Controls.Add(this.btnGuardar);
             this.flowLayoutPanel1.Controls.Add(this.btnGuardar2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 221);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(157, 219);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(242, 61);
             this.flowLayoutPanel1.TabIndex = 19;
@@ -568,7 +568,7 @@ namespace proyectoZero.Presentacion
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(144, 40);
+            this.panel4.Location = new System.Drawing.Point(286, 38);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(343, 2);
             this.panel4.TabIndex = 13;
@@ -585,7 +585,7 @@ namespace proyectoZero.Presentacion
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnVolver.Location = new System.Drawing.Point(495, 3);
+            this.btnVolver.Location = new System.Drawing.Point(637, 1);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(53, 45);
             this.btnVolver.TabIndex = 21;
@@ -596,7 +596,7 @@ namespace proyectoZero.Presentacion
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox2.Location = new System.Drawing.Point(144, 20);
+            this.textBox2.Location = new System.Drawing.Point(286, 18);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(345, 19);
@@ -608,7 +608,7 @@ namespace proyectoZero.Presentacion
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Location = new System.Drawing.Point(154, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 17);
             this.label1.TabIndex = 11;
@@ -626,7 +626,7 @@ namespace proyectoZero.Presentacion
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(307, 19);
+            this.button6.Location = new System.Drawing.Point(396, 26);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(35, 33);
             this.button6.TabIndex = 22;
@@ -688,7 +688,7 @@ namespace proyectoZero.Presentacion
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Personal";
-            this.Size = new System.Drawing.Size(828, 519);
+            this.Size = new System.Drawing.Size(1052, 519);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

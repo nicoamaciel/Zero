@@ -28,8 +28,8 @@ namespace proyectoZero.Presentacion
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
-            Personal perso = new Personal();
             panel2.Controls.Clear();
+            Personal perso = new Personal();
             perso.Dock = DockStyle.Fill;
             panel2.Controls.Add(perso);
         }
